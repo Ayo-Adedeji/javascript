@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+    <script>
+// Section A: JavaScript Array Methods
+
+// 1. The purpose of the 'push()' is to add an element in the end of an Array 
+// WHILE the purpose of 'pop()' is to remove the last element in an array.
+
+// Examples
+// Using 'push()'
+
+let fruits = ["Mango", "Orange", "Grape", "Apple"]
+fruits.push("Pineapple")
+console.log(fruits);
+
+// Using 'pop()'
+let berry = ["Mango", "Orange", "Grape", "Apple"]
+berry.pop();
+console.log(berry);
+
+2.
+let evenNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+console.log(evenNumbers.filter((x) => x % 2 === 0));
+
+// 3.
+// The 'find()' method is used to find the first value that meets your requirement in an array.
+
+// Example
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(num.find((x) => x % 2 === 0));
+
+
+
+
+// Section B: JavaScript Conditions 
+
+// 1. 'if', |'else if', and 'else' are used for conditional statements. 
+// 'if' and 'else' are conditional statements used if there is only going to be a set outcome or ne outcome WHILE 'else if' is used if there is more than one outcome.
+
+// Example
+ let age = 70
+if (age >= 70) {
+    console.log("Elder")
+} else if (age >= 40) {
+    console.log("Adult")
+} else if (age >= 18) {
+    console.log("Youth")
+} else {
+    console.log("Minor")
+}
+
+// 2.
+ let number = 0
+if (number > 0) {
+    console.log("Positive")
+}
+ else if (number < 0) {
+    console.log("Negative")
+}
+else  {
+    console.log("Zero")
+}
+
+// 3.
+// A switch statement is used to perform different actions or outcomes based on different conditions.
+
+// Example
+
+let day = "Friday"
+switch (day) { 
+case "Monday":
+    console.log("Start of the Week")
+break;
+case "Tuesday":
+    console.log("Second day of the Week")
+break;
+case "Wednesday":
+    console.log("Midweek")
+break;
+case "Thursday":
+    console.log("Fourth day of the week")
+break;
+case "Friday":
+    console.log("End of workweek")
+break;
+case "Saturday":
+    console.log("Weekend")
+break;
+case "Sunday":
+    console.log("The Lord's day")
+default:
+    console.log("Days of the Week")
+}
+
+// 4. 
+// Comparison operators are used in logical statements to determine equality or difference betwwen variables or values. 
+
+
+// == is the equality operator that checks if two values are equal, but it does not compare their data types. 
+// Example  
+//  console.log("2" == 2) This means "2" == 2 would return true.
+
+// === is the strict equality operator, it compares both the value and the data type. 
+// Example
+//  console.log("2" === 2)  So, "2" === 2 would return false because one is a string and the other is a number. 
+// console.log(2 === 2);  true (Same value and type)
+
+// == can lead to unexpected results due to automatic type conversion so using === is best to avoid unwanted errors.
+
+
+// != (is not) it compares values for inequality but allows type conversion similar to how == works.
+// Example
+// console.log("5" != 5) false
+// console.log("1" != 5) true
+
+
+
+// !== checks both value and type
+// Example
+// console.log("5" !== 5); true 
+// console.log(10 !== 10); false
+
+
+
+// > greater than (To check if one value is greater than the other)
+// Example
+// console.log(5 > 3)  true because 5 is greater than 3.
+// console.log(200 > 500)   false because 200 is not greater than 500.
+
+
+
+
+// < less than  (To check if one value is lesser than the other)
+// Example
+// console.log(50 > 200)   true because 50 is less than 200.
+// console.log(5 < 3)  false because 5 is greater than 3.
+
+
+
+
+// 5.
+let score = 75
+if (score >= 70) {
+    console.log("A")
+} else if (score >= 60) {
+    console.log("B")
+} else if (score >= 50) {
+    console.log("C")
+} else if (score >= 45 )  {
+    console.log("D")
+}
+else if (score >= 40 )  {
+    console.log("E")
+}
+else { 
+    console.log("Fail")
+}
+
+
+
+
+
+// Section C: JavaScript Functions
+// 1. Functions are essential in JavaScript, acting like procedures that perform tasks or calculate values. A function takes input, returns output,
+// To use a function, it must be defined within the scope from which it’s called.
+
+// A function in JavaScript is a reusable block of code, also helps in organizing and structuring programs.
+
+// 2. 
+function greetUser(){
+console.log("Welcome, " + "Mr. Mike")
+}
+greetUser();
+
+// 3.
+function product(a, b){
+    return (a * b)
+}
+console.log(product(4, 5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
